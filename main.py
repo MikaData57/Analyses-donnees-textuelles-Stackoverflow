@@ -186,9 +186,8 @@ async def predict_tags(question: str):
         
     # Results
     results = {}
-    results['Tokens'] = cleaned_question
-    results['Predicted Tags'] = tags_predict
-    results['Predicted Tags Probabilities'] = df_predict_probas\
+    results['Predicted_Tags'] = tags_predict
+    results['Predicted_Tags_Probabilities'] = df_predict_probas\
         .set_index('Tags')['Probas'].to_dict()
     
     return results
@@ -198,4 +197,14 @@ async def predict_tags(question: str):
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000, debug=True) 
 
-#question = 'Ok, so I was looking through some data analysis (very basic) projects. I came across this line- print(df.groupby("level")["attempt"].mean()) Where df is the dataframe of the file https://raw.githubusercontent.com/whitehatjr/Data-Analysis-by-visualisation/master/data.csv Basically, as far as I can tell, It is the data of Grade 3 students who attempted a quiz, which had levels. Now, the only usages of groupby() I knew were - #First Usage q = df.groupby("") #Second Usage w = df.groupby(["", ""]) Can someone please explain to me, what the statement print(df.groupby("level")["attempt"].mean()) actually is?'
+'''
+question = Ok, so I was looking through some data analysis (very basic) projects.
+I came across this line- print(df.groupby("level")["attempt"].mean()) 
+Where df is the dataframe of the file 
+https://raw.githubusercontent.com/whitehatjr/Data-Analysis-by-visualisation/master/data.csv 
+Basically, as far as I can tell, It is the data of Grade 3 students who attempted a quiz, 
+which had levels. Now, the only usages of groupby() I knew were - 
+#First Usage q = df.groupby("") 
+#Second Usage w = df.groupby(["", ""]) 
+Can someone please explain to me, what the statement print(df.groupby("level")["attempt"].mean()) actually is?
+'''

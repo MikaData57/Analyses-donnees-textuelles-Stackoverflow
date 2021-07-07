@@ -1,3 +1,4 @@
 datas/
 models/
+__pycache__/
 kaggle_to_github.bat
