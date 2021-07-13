@@ -195,7 +195,7 @@ async def predict_tags(question: str):
  
 # Run app API with uvicorn   
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000, debug=True) 
+    uvicorn.run(app, host="127.0.0.1", port=8000) 
 
 '''
 question = Ok, so I was looking through some data analysis (very basic) projects.
