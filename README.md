@@ -7,6 +7,7 @@
 * [Data](#data)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [API](#API)
 
 ## <span id="general-info">General information</span>
 Machine Learning algorithm designed to automatically assign several relevant tags to a question asked on the famous Stack overflow site.     
@@ -44,3 +45,6 @@ Project is created with:
 ## <span id="setup">Setup</span>
 Download the Notebook and import it preferably into Google Colaboratoty, Kaggle or Jupyter via Anaconda.      
 Then just perform a *Run all* to run the project.
+
+## <span id="API">API</span>
+An API developed with Flask and Swagger based on the logistic regression model is available in a second Git repostory at: https://github.com/MikaData57/stackoverflow_swagger_api
